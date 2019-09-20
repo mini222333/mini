@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+table{
+width: 50%;
+text-align: center;
+border-collapse: collapse;
+margin: 0 outo;
+}
+
+table,tr,td,th {
+border: 1px solid blue;
+}
+
+th, td{
+font-family: sans-serif;
+font-weigth: bold;
+}
+
+h3{
+text-align: center;
+font-family: fantasy;
+}
+
+.tablea tr:nth-child(2n+1) {
+	background-color: gray;
+}
+.tablea tr:hover, tableb tr:hover{
+background-color: orange;
+font-size: 105%
+}
+div{
+text-align: center
+}
+</style>
+</head>
+<body>
+<h3>table css</h3>
+
+<table class="tablea">
+
+<tr>
+<th>이름</th><th>지역</th><th>phone</th>
+</tr>
+
+<tr>
+<td>홍길동</td><td>서울</td><td>010-1111-2345<td>
+</tr>
+<tr>
+<td>고길동</td><td>서울</td><td>010-1111-2345<td>
+</tr>
+<tr>
+<td>김길동</td><td>서울</td><td>010-1111-2345<td>
+</tr>
+<tr>
+<td>이길동</td><td>서울</td><td>010-1111-2345<td>
+</tr>
+<tr>
+<td>최길동</td><td>서울</td><td>010-1111-2345<td>
+</tr>
+
+</table>

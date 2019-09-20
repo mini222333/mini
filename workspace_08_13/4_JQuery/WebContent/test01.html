@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="viewport" content="width = device -width, initial-scale=1">
+
+<title>Insert title here</title>
+
+<!-- <script src="./js/jquery-3.4.1.min.js"> -->
+<!-- </script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+//window.onload = function(){
+//	alert('~~~~');
+//};
+
+
+//$(document).ready(function(){ alert('jquery');});
+	//$=jquery
+	//$(function(){});
+	//$(()=>{});
+	$(function(){
+		$('#h2_2').click(function(){
+			$(this).hide();
+		});
+		});//콜백함수.함수안에서함수핸들링 자바스크립트특징
+</script>
+</head>
+<body>
+<h1>jquery test</h1>
+<h2>클릭하면 사라집니다1</h2>
+<h2 id="h2_2">클릭하면 사라집니다2</h2>
+<h2>클릭하면 사라집니다3</h2>
+<h2>클릭하면 사라집니다4</h2>
+</body>
+</html>

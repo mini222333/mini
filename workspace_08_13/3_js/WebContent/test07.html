@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="viewport" content="width = device -width, initial-scale=1">
+
+<title>javascript array</title>
+<style type="text/css">
+#result{
+width: 500px;
+height: 300px;
+border: 2px solid blue;}
+</style>
+<script type="text/javascript">
+
+//window.onload = function(){}
+//함수는 웹브라우저의 모든 구성 요소에 대한 로드가 끝났을때 브라우저에 의해서 호출되는 함수다.
+window.onload = function(){
+
+	let disp = document.getElementById('result');
+	//disp.innerText="<h3>~~~~~</h3>"
+	//disp.innerHTML="<h3>~~~~~</h3>"//위에안먹음 
+	let tag="";	
+	num.filter(i=> i>33).forEach(data => tag+=("<h3>"+data+"</h3>"))//에러
+	disp.innerHTML=tag;
+} //돔트리?가 완성된이후에수행
+		
+const log=console.log;
+
+
+let x = [3,6,9,77,88];
+let y = [22,33,44,55,77];
+
+let num= x.concat(y);
+log(num)
+num.sort()
+log(num)
+num.sort((a,b)=>{return a-b})
+log(num)
+
+num.filter(i => i>33).forEach(data => log(data))
+log(num)
+
+//num.filter(i => i>33).forEach(data => document.write("<h5>"+data+"</h5>"))
+
+
+</script>
+</head>
+<body>
+<h3> javascript array</h3>
+<div id="result">
+
+</div>
+</body>
+</html>

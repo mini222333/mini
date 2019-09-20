@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="viewport" content="width = device -width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+const log = console.log;
+$(()=>{
+	//alert('~~~~');
+	
+	$('img').each(function(index,item){
+		//log(index);
+		//log(item);
+	//log('./img/s'+index+'jpg')
+		$(this).attr('src','./img/강동호'+index+'.jpg');
+		$(this).attr('width','100');
+		$(this).attr('height','100');
+		
+	});
+	
+	
+});
+
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+<h3>jQuery img</h3>
+<img />
+<img />
+
+</body>
+</html>

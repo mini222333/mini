@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta charset="viewport" content="width = device -width, initial-scale=1">
+<title>web storage</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<h3> web storage </h3>
+<p> 페이지 방문횟수 : <span id="count"> </span> 번</p>
+<script type="text/javascript">
+if(!localStorage.count)localStorage.count=0;
+localStorage.count=parseInt(localStorage.count) + 1;
+$('#count').html(localStorage.count);
+//계속 살아있음
+</script>
+</body>
+</html>
